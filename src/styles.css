@@ -1,0 +1,52 @@
+/* Add this CSS to your existing styles or create a separate CSS file */
+
+/* Board Styles */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 4px;
+    width: 300px;
+    margin: 0 auto;
+    margin-left: 500px;
+  }
+  
+  /* Square Styles */
+  .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    border: 3px solid grey;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Added color transition */
+  }
+  
+  .square:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Add these styles for blue "X"s and orange "O"s */
+  .square.x {
+    color: blue;
+  }
+  
+  .square.o {
+    color: orange;
+  }
+  /* Game Styles */
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .game-info {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
